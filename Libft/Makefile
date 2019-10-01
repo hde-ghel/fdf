@@ -6,7 +6,7 @@
 #    By: hde-ghel <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/10 11:33:13 by hde-ghel          #+#    #+#              #
-#    Updated: 2019/02/19 19:02:27 by hde-ghel         ###   ########.fr        #
+#    Updated: 2018/11/28 14:54:40 by hde-ghel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,16 +32,14 @@ OBJ = $(SRC:.c=.o)
 all : $(NAME)
 
 $(NAME) :
-	@gcc $(FLAG) $(OPTION) $(SRC)
-	@ar rc $(NAME) $(OBJ)
-	@ranlib $(NAME)
+	gcc $(FLAG) $(OPTION) $(SRC)
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 clean :
-	@/bin/rm -f $(OBJ)
+	/bin/rm -f $(OBJ)
 
 fclean : clean
-	@/bin/rm -f $(NAME)
+	/bin/rm -f $(NAME)
 
 re : fclean all
-
-.PHONY: all clean fclean re

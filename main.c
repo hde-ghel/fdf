@@ -6,7 +6,7 @@
 /*   By: hde-ghel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/29 18:09:53 by hde-ghel          #+#    #+#             */
-/*   Updated: 2019/05/26 13:09:05 by hde-ghel         ###   ########.fr       */
+/*   Updated: 2019/04/05 17:56:26 by hde-ghel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,6 @@ int			main(int ac, char **av)
 		return (0);
 	if (!(var = (t_var *)malloc(sizeof(t_var))))
 		ft_error(NULL, NULL);
-	ft_bzero(var, sizeof(t_var *));
 	if (!(var->img = (t_img *)malloc(sizeof(t_img))))
 		ft_error(var, NULL);
 	if (!(var->array = (t_array *)malloc(sizeof(t_array))))
@@ -94,7 +93,7 @@ int			main(int ac, char **av)
 		ft_error(var, dest);
 	ft_init_alt_tab(dest, var);
 	ft_init_mlx(var);
-	mlx_hook(var->win_ptr, 2, 0, key_press, var);
+	mlx_hook(var->win_ptr, 2, 1, key_press, var);
 	mlx_key_hook(var->win_ptr, ft_key_hook, var);
 	mlx_expose_hook(var->win_ptr, ft_expose_hook, var);
 	mlx_loop(var->mlx_ptr);

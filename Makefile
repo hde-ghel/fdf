@@ -6,42 +6,26 @@
 #    By: jreynaer <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/12/11 12:21:01 by jreynaer          #+#    #+#              #
-#    Updated: 2019/07/07 00:21:04 by hde-ghel         ###   ########.fr        #
+#    Updated: 2019/01/09 16:56:37 by hde-ghel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fdf
-
-SRC = ./main.c ./ft_mlx.c ./ft_read.c ./ft_traceseg.c ./hook.c ./inits.c\
-	./key_press.c ./map.c ./menu.c ./projections.c ./rotate.c
-
-OBJ = $(SRC:.c=.o)
-
-CFLAGS = -Wall -Wextra -Werror
-
-LIBFT = ./Libft/libft.a
-
-FRAMEWORK = -framework OpenGL -framework Appkit
-
-
-$(NAME):
-	@make -C ./Libft/
-	@echo 'Libft compilation : OK'
-	@gcc $(CFLAGS) -o $(NAME) $(SRC) \
-		$(LIBFT) -L minilibx_macos/ -lmlx $(FRAMEWORK)
-	@echo 'fdf compilation : OK'
+OBJ = *.o
+SRC = *.c Libft/libft.a
+FLAGS = -wall -wextra #-werror
 
 all: $(NAME)
 
+$(NAME):
+	gcc -o $(NAME) $(SRC) -L minilibx/ -lmlx -lm -L/usr/lib64/X11 -lX11 -lXext -L/usr/lib64
+	##-framework OpenGL -framework Appkit
+
 clean:
-	@rm -f $(OBJ)
-	@echo 'fdf clean : OK'
-	@make clean -C ./Libft/
-	@echo 'Libft clean : OK'
+	rm -f $(OBJ)
 
 fclean: clean
-	@rm -f $(NAME)
-	@make fclean -C ./Libft/
+	rm -f $(NAME)
 
 re: fclean all
 

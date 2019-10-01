@@ -16,6 +16,7 @@ void	del(void *content, size_t content_size)
 {
 	free(content);
 	content = NULL;
+	content_size = content_size;
 	content_size = 0;
 }
 

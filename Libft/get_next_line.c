@@ -6,7 +6,7 @@
 /*   By: hde-ghel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 20:04:47 by hde-ghel          #+#    #+#             */
-/*   Updated: 2019/02/19 16:33:02 by hde-ghel         ###   ########.fr       */
+/*   Updated: 2018/11/27 22:36:36 by hde-ghel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,11 +72,11 @@ static	int		ft_read_next_buff(int fd, char *buff, char **line, char **rest)
 int				get_next_line(const int fd, char **line)
 {
 	char			buff[BUFF_SIZE_GNL + 1];
-	static	char	*rest[OPEN_MAX];
+	static	char	*rest[_SC_OPEN_MAX];
 	int				x;
 
 	x = 0;
-	if (fd < 0 || read(fd, buff, 0) == -1 || fd > OPEN_MAX
+	if (fd < 0 || read(fd, buff, 0) == -1 || fd > _SC_OPEN_MAX
 			|| !(*line = ft_strnew(0)))
 		return (-1);
 	if (rest[fd])

@@ -14,6 +14,7 @@
 
 # define KEYCODE_H
 
+/*
 # define NOEVENTMASK 0L
 # define KPMASK (1L<<0)
 # define KEYRELEASEMASK (1L<<1)
@@ -72,34 +73,35 @@
 # define SCROLLDOWN_KEY 5
 # define SCROLLLEFT_KEY 6
 # define SCROLLRIGHT_KEY 7
+*/
+# define A_KEY 97
+# define B_KEY 98
+# define C_KEY 99
+# define D_KEY 100
+# define E_KEY 101
+# define F_KEY 102
+# define G_KEY 103
+# define H_KEY 104
+# define I_KEY 105
+# define J_KEY 106
+# define K_KEY 107
+# define L_KEY 108
+# define M_KEY 109
+# define N_KEY 110
+# define O_KEY 111
+# define P_KEY 112
+# define Q_KEY 113
+# define R_KEY 114
+# define S_KEY 115
+# define T_KEY 116
+# define U_KEY 117
+# define V_KEY 118
+# define W_KEY 119
+# define X_KEY 120
+# define Y_KEY 121
+# define Z_KEY 122
 
-# define A_KEY 0
-# define B_KEY 11
-# define C_KEY 8
-# define D_KEY 2
-# define E_KEY 14
-# define F_KEY 3
-# define G_KEY 5
-# define H_KEY 4
-# define I_KEY 34
-# define J_KEY 38
-# define K_KEY 40
-# define L_KEY 37
-# define M_KEY 46
-# define N_KEY 45
-# define O_KEY 31
-# define P_KEY 35
-# define Q_KEY 12
-# define R_KEY 15
-# define S_KEY 1
-# define T_KEY 17
-# define U_KEY 32
-# define V_KEY 9
-# define W_KEY 13
-# define X_KEY 7
-# define Y_KEY 16
-# define Z_KEY 6
-
+/*
 # define K1_KEY 18
 # define K2_KEY 19
 # define K3_KEY 20
@@ -123,19 +125,21 @@
 # define CM_KEY 43
 # define PT_KEY 47
 # define SL_KEY 44
+*/
 
-# define F1_KEY 122
-# define F2_KEY 120
-# define F3_KEY 99
-# define F4_KEY 118
-# define F5_KEY 96
-# define F6_KEY 97
-# define F7_KEY 98
-# define F8_KEY 100
-# define F9_KEY 101
-# define F10_KEY 109
-# define F11_KEY
-# define F12_KEY 111
+# define F1_KEY 65470
+# define F2_KEY 65471
+# define F3_KEY 65472
+# define F4_KEY 65473
+# define F5_KEY 65474
+# define F6_KEY 65475
+# define F7_KEY 65476
+# define F8_KEY 65477
+# define F9_KEY 65478
+# define F10_KEY 65479
+# define F11_KEY 65480
+# define F12_KEY 65481
+/*
 # define F13_KEY 105
 # define F14_KEY 107
 # define F15_KEY 113
@@ -143,14 +147,14 @@
 # define F17_KEY 64
 # define F18_KEY 79
 # define F19_KEY 80
+*/
+# define UP_KEY 65362
+# define DOWN_KEY 65364
+# define RIGHT_KEY 65363
+# define LEFT_KEY 65361
 
-# define UP_KEY 126
-# define DOWN_KEY 125
-# define RIGHT_KEY 124
-# define LEFT_KEY 123
-
-# define ESC_KEY 53
-# define TAB_KEY 48
+# define ESC_KEY 65307
+# define TAB_KEY 65289
 # define CL_KEY 272
 # define LSFT_KEY 257
 # define LCTRL_KEY 256
@@ -167,25 +171,25 @@
 # define RDEL_KEY 117
 # define HOME_KEY 115
 # define END_KEY 119
-# define PUP_KEY 116
-# define PDOWN_KEY 121
+# define PUP_KEY 65365
+# define PDOWN_KEY 65366
 # define CLR_KEY 71
 
-# define NK0_KEY 82
-# define NK1_KEY 83
-# define NK2_KEY 84
-# define NK3_KEY 85
-# define NK4_KEY 86
-# define NK5_KEY 87
-# define NK6_KEY 88
-# define NK7_KEY 89
-# define NK8_KEY 91
-# define NK9_KEY 92
+# define NK0_KEY 65438
+# define NK1_KEY 65436
+# define NK2_KEY 65433
+# define NK3_KEY 65435
+# define NK4_KEY 65430
+# define NK5_KEY 65437
+# define NK6_KEY 65432
+# define NK7_KEY 65429
+# define NK8_KEY 65431
+# define NK9_KEY 65434
 # define NKEQ_KEY 81
 # define NKSL_KEY 75
 # define NKWC_KEY 67
-# define NKMN_KEY 78
-# define NKPL_KEY 69
+# define NKMN_KEY 65453
+# define NKPL_KEY 65451
 # define NKPT_KEY 65
 # define NKNTR_KEY 76
 

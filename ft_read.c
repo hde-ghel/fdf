@@ -6,7 +6,7 @@
 /*   By: hde-ghel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/10 15:12:26 by hde-ghel          #+#    #+#             */
-/*   Updated: 2019/06/05 21:37:52 by hde-ghel         ###   ########.fr       */
+/*   Updated: 2019/02/26 14:31:42 by hde-ghel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ void	ft_error(t_var *var, char *s1)
 			ft_memdel((void **)&var->array);
 		if (var->points)
 			ft_memdel((void **)&var->points);
-		if (var->alt_tab != NULL)
-			ft_memdel((void **)&var->alt_tab);
 		ft_memdel((void **)&var);
 	}
+	if (var->alt_tab != NULL)
+		ft_memdel((void **)&var->alt_tab);
 	if (s1 != NULL)
 		ft_strdel(&s1);
 	ft_putstr("error");
@@ -82,7 +82,7 @@ char	*ft_read(char *input, t_var *var)
 	if (!(temp = ft_strnew(0)))
 		ft_error(var, NULL);
 	var->array->col_height = 0;
-	if ((var->fd = open(input, O_RDONLY)) == -1 || var->fd < 0)
+	if ((var->fd = open(input, O_RDONLY)) == -1)
 		ft_error(var, temp);
 	while (get_next_line(var->fd, &line) == 1)
 	{

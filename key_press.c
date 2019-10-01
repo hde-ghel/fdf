@@ -6,7 +6,7 @@
 /*   By: jreynaer <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/15 11:27:24 by jreynaer          #+#    #+#             */
-/*   Updated: 2019/08/04 18:42:48 by hde-ghel         ###   ########.fr       */
+/*   Updated: 2019/02/26 11:59:41 by hde-ghel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ void	key_press3(int key, t_var *var)
 {
 	if (key == D_KEY)
 		var->offset_x += 20;
-	else if (key == A_KEY)
+	else if (key == Q_KEY)
 		var->offset_x -= 20;
-	else if (key == W_KEY)
+	else if (key == Z_KEY)
 		var->offset_y -= 20;
 	else if (key == S_KEY)
 		var->offset_y += 20;

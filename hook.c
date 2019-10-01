@@ -6,7 +6,7 @@
 /*   By: hde-ghel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/29 11:37:18 by hde-ghel          #+#    #+#             */
-/*   Updated: 2019/05/20 15:41:32 by hde-ghel         ###   ########.fr       */
+/*   Updated: 2019/02/28 18:46:24 by hde-ghel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 int		key_press(int key, t_var *var)
 {
-	if (key != NK0_KEY && key != NK1_KEY && key != NK2_KEY && key != NK3_KEY
-			&& key != F5_KEY && key != ESC_KEY)
+	if (key != ESC_KEY && key != NK0_KEY && key != NK1_KEY && key != NK2_KEY 
+		&& key != NK3_KEY && key != NK0_KEY && key != NK1_KEY && key != NK2_KEY 
+		&& key != NK3_KEY)
 	{
 		key_press2(key, var);
 		key_press3(key, var);
@@ -55,8 +56,8 @@ void	ft_freeall(t_var *var)
 
 int		ft_key_hook(int key, t_var *var)
 {
-	if (key == NK0_KEY || key == NK1_KEY || key == NK2_KEY || key == NK3_KEY
-			|| key == F5_KEY || key == ESC_KEY)
+	if (key == ESC_KEY || key == NK0_KEY || key == NK1_KEY || key == NK2_KEY 
+		|| key == NK3_KEY || key == F5_KEY)
 	{
 		if (key == ESC_KEY)
 		{
@@ -75,6 +76,6 @@ int		ft_key_hook(int key, t_var *var)
 		if (key == NK3_KEY)
 			var->projection = 3;
 		ft_expose_hook(var);
-		}
+	}
 	return (0);
 }

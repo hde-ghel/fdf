@@ -6,7 +6,7 @@
 /*   By: jreynaer <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/10 14:17:19 by jreynaer          #+#    #+#             */
-/*   Updated: 2019/05/25 17:13:17 by hde-ghel         ###   ########.fr       */
+/*   Updated: 2019/04/05 14:54:36 by hde-ghel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 # include "minilibx_macos/mlx.h"
 
 # define ENDIAN 1
-# define LENGTH 1600
-# define HEIGHT 900
+# define LENGTH 1200
+# define HEIGHT 700
 # define BITS_PER_PIXEL 8
 # define MAX_Z 100
 # define MENU_COLOR 0x0032CD32
