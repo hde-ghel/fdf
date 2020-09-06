@@ -18,7 +18,7 @@ Screenshot will be added.
 ## Compiling and running
 Run `make`. An executable will compile. Currently running on OS X and linux.
 
-Run it with `./fdf [map]`. A bunch of sample maps are provided in the `maps`
+Run it with `./fdf [map]`. A bunch of sample maps are provided in the `test_maps`
 directory.
 
 Controls can be found on the menu inside de program.
