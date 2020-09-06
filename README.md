@@ -10,7 +10,7 @@ Screenshot will be added.
 * Simple file format definition (array of space-separated integers defining height of each point)
 * Different view modes (iso, parallel, pyramid, flat)
 * 3D rotations
-* Camera controls (zoom, up, down, right, left)
+* Camera controls (zoom, move : up, down, right, left)
 * Pretty color gradients!
 * Color modification
 * Height modification
