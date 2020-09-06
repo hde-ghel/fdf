@@ -15,7 +15,7 @@
 # include <fcntl.h>
 # include <stdlib.h>
 # include <math.h>
-# include "Libft/libft.h"
+# include "Libft/includes/libft.h"
 # include "keycode.h"
 # include "minilibx_macos/mlx.h"
 
