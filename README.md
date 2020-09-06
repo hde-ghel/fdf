@@ -1,7 +1,6 @@
 # FdF 
 
-A simple 3D height-map renderer. Color are defined by
-relative height in the map.
+A simple 3D height-map renderer.
 
 ## Preview
 Screenshot will be added.
@@ -14,6 +13,7 @@ Screenshot will be added.
 * Pretty color gradients!
 * Color modification
 * Height modification
+* Color are defined by relative height in the map.
 
 ## Compiling and running
 Run `make`. An executable will compile. Currently running on OS X and linux.
